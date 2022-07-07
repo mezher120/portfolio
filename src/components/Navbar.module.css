@@ -1,0 +1,103 @@
+
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color:rgb(254, 243, 227);
+
+}
+
+
+
+.buttonercontainer {
+    padding-top: 15px;
+    opacity: 0;
+    animation-delay: 2s;
+    animation-duration: 0.8s;
+    animation-name: appear;
+    animation-fill-mode: forwards;
+}
+
+.iconcontainer {
+    opacity: 0;
+    animation-delay: 2s;
+    animation-duration: 0.8s;
+    animation-name: appear;
+    animation-fill-mode: forwards;
+}
+
+.iconsignature {
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+}
+
+@keyframes appear {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 100%;
+    }
+  }
+
+
+.iconlinkedin {
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+    box-shadow: inset 0px 0px 0px #2F3B47;
+    border-radius: 5px;
+    transition: all 0.5s !important;
+    align-items: center;
+    align-content: center;
+}
+
+.iconlinkedin:hover {
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+    box-shadow: inset 0px -80px 0px #2F3B47;
+    border-radius: 5px;
+}
+
+.buttons {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: transparent;
+    box-shadow: inset 0px 0px 0px #2F3B47;
+    transition: all 0.5s !important;
+    text-decoration: none;
+    color: black;
+
+}
+
+.buttons:hover {
+    margin-left: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: transparent;
+    box-shadow: inset 0px -80px 0px #2F3B47;
+    text-decoration: none;
+    color: white;
+}
+
+.button-fill-bottom {
+    box-shadow: inset 0px 0px 0px #2F3B47;
+    transition: all 0.5s !important;
+    }
+    
+    .button-fill-bottom:hover {
+    box-shadow: inset 0px -80px 0px #2F3B47;
+    }

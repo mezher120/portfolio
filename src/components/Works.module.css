@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(254, 243, 227);
+    width: 100%;
+}
+
+.cardscontainer {
+    justify-content: center !important;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    background-color:rgb(254, 243, 227);
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+}
+
+.line {
+    margin-left: 5%;
+    width: 90%;
+    border-top: 2px solid #8c8b8b;
+    /* transition: width 0.5s ease, margin-left 0.5s ease; */
+  }
+
+  .path2 {
+    stroke-dasharray: 1120;
+  /*   stroke-dashoffset: 800; */
+    animation: draw1 5s linear alternate;
+  }
+  
+  @keyframes draw1 {
+    from {
+      stroke-dashoffset: 1120;
+    }
+    to {
+      stroke-dashoffset: 2240;
+    }
+  }
