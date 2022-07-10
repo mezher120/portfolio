@@ -1,7 +1,7 @@
 .container {
     display: flex;
     flex-direction: column;
-    background-color:rgb(254, 243, 227);
+    background-color: var(--background);
     width: 100%;
 }
 
@@ -10,18 +10,21 @@
     align-items: center;
     display: flex;
     flex-direction: row;
-    background-color:rgb(254, 243, 227);
+    background-color:var(--background);    
     width: 100%;
 }
 
 h2 {
     text-align: center;
+    font-size: 35px;
+    color: var(--text-primary);
 }
 
 .line {
+    margin-top: 30px;
     margin-left: 5%;
     width: 90%;
-    border-top: 2px solid #8c8b8b;
+    border-top: 2px solid var(--line);
     /* transition: width 0.5s ease, margin-left 0.5s ease; */
   }
 

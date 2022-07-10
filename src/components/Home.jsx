@@ -16,7 +16,8 @@ export default function Home() {
             </h1>
             </div>
             <div className={style.pcontainer} >
-            <p className={style.lineUp} >I am a passionate Frontend/Backend developer for the World. I have 3 years experience developing apps.</p>
+            <p className={style.lineUp} >I am a passionate Frontend/Backend developer for the World. I have 3 years experience developing apps. Well-organised person, problem solver, independent employee. 
+            Fan of Sports, videogames and family.</p>
             </div>
     
         </div>

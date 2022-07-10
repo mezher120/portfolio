@@ -3,15 +3,16 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color:rgb(254, 243, 227);
-    height: 100vh;
+    background-color:var(--background);
+    /* height: 100vh; */
+    margin-top: 50px;
     width: 100%;
 
 }
 
 
 .containerbox {
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px var(--boxshadow);
     cursor: pointer;
     position: absolute;
 }
@@ -24,7 +25,7 @@
 }
 
 .containerbox:hover {
-    box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 4px 4px 5px 0px var(--boxshadow);
     opacity: 80%;
     transform: translate(0.5px);
     cursor: pointer;
@@ -90,6 +91,12 @@
 
 .hovereffect a.info:hover {
     box-shadow: 0 0 5px #fff;
+}
+.hovereffect a.info:active {
+    box-shadow: 0 0 5px #fff;
+    background-color: #fff;
+    color: black;
+
 }
 .hovereffect:hover {
 

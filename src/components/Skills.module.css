@@ -1,0 +1,144 @@
+.container {
+    background-color: var(--background);
+    height: 50vw;
+
+}
+
+.containerbackground {
+    background-color: var(--background);
+}
+
+h2 {
+    margin: 0;
+}
+
+.containerfrontback {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.frontback {
+    display: flex;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 50%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+
+
+.containerfront {
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.botonesfront {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+
+
+/* animation 2 */
+.button_container {
+    position: relative;
+    width: 100px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+    overflow: hidden;
+    border: 1px solid;
+    font-weight: 300;
+    font-size: 20px;
+    transition: 0.5s;
+    letter-spacing: 1px;
+    border-radius: 8px;
+}
+.button_container button {
+    width: 101%;
+    height: 100%;
+    font-weight: 300;
+    font-size: 11px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    background: var(--backgroundbtn);
+    -webkit-mask-image: url(https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png);
+    mask: url(https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png);
+    -webkit-mask-size: 2300% 100%;
+    mask-size: 2300% 100%;
+    border: none;
+    color: var(--colorbtn);
+    cursor: pointer;
+    -webkit-animation: ani2 0.7s steps(22) forwards;
+    animation: ani2 0.7s steps(22) forwards;
+}
+.button_container button:hover {
+    -webkit-animation: ani 0.7s steps(22) forwards;
+    animation: ani 0.7s steps(22) forwards;
+}
+
+.mas {
+    position: absolute;
+    color: var(--text-primary);
+    text-align: center;
+    width: 101%;
+    font-weight: 300;
+    position: absolute;
+    font-size: 11px;
+    margin-top: 17px;
+    overflow: hidden;
+    font-weight: bold;
+}
+
+@-webkit-keyframes ani {
+    from {
+        -webkit-mask-position: 0 0;
+        mask-position: 0 0;
+   }
+    to {
+        -webkit-mask-position: 100% 0;
+        mask-position: 100% 0;
+   }
+}
+@keyframes ani {
+    from {
+        -webkit-mask-position: 0 0;
+        mask-position: 0 0;
+   }
+    to {
+        -webkit-mask-position: 100% 0;
+        mask-position: 100% 0;
+   }
+}
+
+ @-webkit-keyframes ani2 {
+	 from {
+		 -webkit-mask-position: 100% 0;
+		 mask-position: 100% 0;
+	}
+	 to {
+		 -webkit-mask-position: 0 0;
+		 mask-position: 0 0;
+	}
+}
+ @keyframes ani2 {
+	 from {
+		 -webkit-mask-position: 100% 0;
+		 mask-position: 100% 0;
+	}
+	 to {
+		 -webkit-mask-position: 0 0;
+		 mask-position: 0 0;
+	}
+}

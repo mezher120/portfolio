@@ -7,7 +7,7 @@
     justify-content: space-between;
     padding-left: 20px;
     padding-right: 20px;
-    background-color:rgb(254, 243, 227);
+    background-color: var(--background);
 
 }
 
@@ -51,7 +51,7 @@
     height: 30px;
     width: 30px;
     margin: 5px;
-    box-shadow: inset 0px 0px 0px #2F3B47;
+    box-shadow: inset 0px 0px 0px var(--backgroundbox);
     border-radius: 5px;
     transition: all 0.5s !important;
     align-items: center;
@@ -62,7 +62,7 @@
     height: 30px;
     width: 30px;
     margin: 5px;
-    box-shadow: inset 0px -80px 0px #2F3B47;
+    box-shadow: inset 0px -80px 0px var(--backgroundbox);
     border-radius: 5px;
 }
 
@@ -71,13 +71,13 @@
     margin-right: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 10px;
-    border: 1px solid black;
+    border: 1px solid var(--borderbtn);
     border-radius: 5px;
     background-color: transparent;
-    box-shadow: inset 0px 0px 0px #2F3B47;
+    box-shadow: inset 0px 0px 0px var(--backgroundbox);
     transition: all 0.5s !important;
     text-decoration: none;
-    color: black;
+    color: var(--text-primary);
 
 }
 
@@ -85,19 +85,72 @@
     margin-left: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 10px;
-    border: 1px solid black;
+    border: 1px solid var(--borderbtn);
     border-radius: 5px;
     background-color: transparent;
-    box-shadow: inset 0px -80px 0px #2F3B47;
+    box-shadow: inset 0px -80px 0px var(--backgroundbox);
     text-decoration: none;
-    color: white;
+    color: var(--text-hover);
 }
 
 .button-fill-bottom {
-    box-shadow: inset 0px 0px 0px #2F3B47;
+    box-shadow: inset 0px 0px 0px var(--backgroundbox);
     transition: all 0.5s !important;
     }
     
     .button-fill-bottom:hover {
-    box-shadow: inset 0px -80px 0px #2F3B47;
+    box-shadow: inset 0px -80px 0px var(--backgroundbox);
     }
+
+
+    .toggle {
+        cursor: pointer;
+        display: inline-block;
+      }
+      
+      .toggle_switch {
+        display: inline-block;
+        background: var(--toggle);
+        border-radius: 16px;
+        width: 58px;
+        height: 32px;
+        position: relative;
+        vertical-align: middle;
+        transition: 0.25s;
+      }
+      .toggle_switch:before, .toggle_switch:after {
+        content: "";
+      }
+      .toggle_switch:before {
+        display: block;
+        background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+        border-radius: 50%;
+        box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        transition: left 0.25s;
+      }
+      .toggle:hover .toggle_switch:before {
+        background: linear-gradient(to bottom, #fff 0%, #fff 100%);
+        box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
+      }
+      .toggle_checkbox:checked + .toggle_switch {
+        background: var(--toggle);
+      }
+      .toggle_checkbox:checked + .toggle_switch:before {
+        left: 30px;
+      }
+      
+      .toggle_checkbox {
+        position: absolute;
+        visibility: hidden;
+      }
+      
+      .toggle_label {
+        margin-left: 5px;
+        position: relative;
+        top: 2px;
+      }

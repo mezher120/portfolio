@@ -4,7 +4,7 @@ import style from './Cards.module.css';
 export default function Cards({image, name}) {
     return (
         // <div>
-        <div className={style.container} >
+        <div className={style.container}     data-aos="fade-up">
             <div className={style.hovereffect} >
                 <img classname={style.imagefluid} width="250px" height="400px" src={image} alt="not found" ></img>
                 <div className={style.overlay} >
