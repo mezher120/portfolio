@@ -9,6 +9,24 @@
     position: fixed;
 }
 
+.buttonercontainer {
+    padding-top: 15px;
+    opacity: 0;
+    animation-delay: 2.5s;
+    animation-duration: 0.8s;
+    animation-name: appear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes appear {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 100%;
+    }
+  }
 
 
 .iconlinkedin {
@@ -31,3 +49,4 @@
     border-radius: 5px;
     border: 1px solid white;
 }
+

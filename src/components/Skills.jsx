@@ -3,12 +3,13 @@ import style from './Skills.module.css';
 
 export default function Skills() {
     return (
-        <div className={style.container}>
+        <div className={style.container} id="skills">
             <div data-aos="fade-up"
             data-aos-offset="300"
              data-aos-easing="ease-in-sine">
                 <h2>Skills</h2>
-                <h2>LANGUAGES</h2>
+                <br></br>
+                <h2>Languages</h2>
             </div>
             <div className={style.button_container} 
             data-aos="fade-up"

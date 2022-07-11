@@ -22,46 +22,39 @@
 
 }
 
-img {
+.imgmap {
     position: relative;
+    width: 60%;
+    height: 70%;
+    border-radius: 15px;
+    border-bottom-left-radius: 0px;
+    border: 10px solid white ;
+    transition: transform .2s;
 }
 
-.hovereffect {
+.imgmap:hover {
     position: relative;
-    width: 100%;
-    height: max-content;
-    float: left;
-    overflow: hidden;
-    text-align: center;
-    cursor: pointer;
-}
-
-.hovereffect .overlay {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    overflow-x: hidden;
-    top: 0;
-    left: 0;
-    background: linear-gradient(to left, #544a7d, var(--background));
-    opacity: 0.9;
-    filter: alpha(opacity=50%);
-}
-
-.hovereffect img {
-    display: block;
-    position: relative;
-    width: 100%;
-    transition: 0.2s ease-in-out;
+    width: 60%;
+    height: 70%;
+    border-radius: 15px;
+    border-bottom-left-radius: 0px;
+    border: 10px solid white ;
+    transform: scale(0.5, 0.5);
 }
 
 .containerform {
     display: flex;
     flex-direction: column;
-    margin-left: 30px;
-    margin-top: 50px;
+    margin-left: 20px;
+    margin-top: 30px;
 
     
+}
+
+.h2 {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 10px;
 }
 
 .containerbtn {
@@ -82,6 +75,7 @@ img {
     transition: all 0.5s !important;
     text-decoration: none;
     color: var(--text-primary);
+    cursor: pointer;
 }
 
 .buttons:hover {
@@ -94,6 +88,7 @@ img {
     box-shadow: inset 0px -80px 0px var(--backgroundbox);
     text-decoration: none;
     color: var(--text-hover);
+    cursor: pointer;
 }
 
 .form__group {
@@ -110,7 +105,7 @@ img {
     border-bottom: 2px solid #9b9b9b;
     outline: 0;
     font-size: 1.3rem;
-    color: var(--primary-text);
+    color: var(--text-primary);
     padding: 7px 0;
     background: transparent;
     transition: border-color 0.2s;

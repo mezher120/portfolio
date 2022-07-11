@@ -12,6 +12,7 @@ import useLocalStorage from 'use-local-storage';
 
 
 
+
 function App() {
 
   const [theme, setTheme] = useLocalStorage('theme' ? 'dark' : 'light')
@@ -21,16 +22,18 @@ function App() {
     setTheme(newTheme);
   }
 
+
+
   return (
     <div data-theme={theme}>
-      <Navbar data={switchTheme}></Navbar>
-      <Home></Home>
+      <Navbar data={switchTheme} ></Navbar>
+      <Home id="home"></Home>
       <Line></Line>
-      <Works></Works>
+      <Works id="works" ></Works>
       <Line></Line>
-      <Skills></Skills>
+      <Skills id="skills"></Skills>
       <Line></Line>
-      <City></City>
+      <City id="contact"></City>
       <Line></Line>
       <Footer></Footer>
     </div>
