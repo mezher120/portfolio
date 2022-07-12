@@ -141,3 +141,20 @@ h2 {
 		 mask-position: 0 0;
 	}
 }
+
+
+@media only screen and (max-width: 600px) {
+.frontback {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    gap: 5px;
+}
+
+
+
+.containerfront {
+    gap: 5px;
+}
+}

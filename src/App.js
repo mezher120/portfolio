@@ -16,10 +16,17 @@ import useLocalStorage from 'use-local-storage';
 function App() {
 
   const [theme, setTheme] = useLocalStorage('theme' ? 'dark' : 'light')
-
+  const color = "#000000";
+  const color2 = "#fef3e3";
   const  switchTheme = () => {
     const newTheme = theme ==='light' ? 'dark' : 'light';
     setTheme(newTheme);
+    if (theme === 'dark') { 
+      document.body.style.backgroundColor = color;
+    } else {
+      document.body.style.backgroundColor = color;
+    }
+
   }
 
 

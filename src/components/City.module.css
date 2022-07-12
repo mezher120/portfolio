@@ -146,3 +146,26 @@
 .form__field:required, .form__field:invalid {
     box-shadow: none;
 }
+
+@media only screen and (max-width: 600px) { 
+    .container {
+        grid-template-columns: 1fr;
+        height: 200vw;
+    }
+
+    .containerform {
+        margin-left: 5px;
+        margin-top: 5px;
+    
+        
+    }
+    .containerbtn {
+        display: flex;
+        margin-left: 30px;
+        margin-top: 15px;
+    }
+
+
+
+
+}

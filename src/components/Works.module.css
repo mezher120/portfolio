@@ -42,3 +42,10 @@ h2 {
       stroke-dashoffset: 2240;
     }
   }
+
+  @media only screen and (max-width: 600px) { 
+    .cardscontainer {
+      flex-direction: column;
+  }
+
+  }

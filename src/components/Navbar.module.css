@@ -156,3 +156,32 @@ html {
         position: relative;
         top: 2px;
       }
+
+      @media only screen and (max-width: 600px) {
+        .container {
+          padding-left: 0px;
+          padding-right: 0px;
+        }
+        .iconsignature {
+          height: 0px ;
+          width: 0px;
+      }
+
+      .buttons {
+        margin-left: 2px;
+        margin-right: 2px; 
+    }
+    
+    .buttons:hover {
+        margin-left: 2px;
+    }
+    .toggle_switch {
+      width: 38px;
+      height: 12px;
+    }
+    .toggle_switch:before {
+      width: 14px;
+      height: 14px;
+    }
+
+      }
