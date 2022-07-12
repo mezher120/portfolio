@@ -47,5 +47,8 @@ h2 {
     .cardscontainer {
       flex-direction: column;
   }
+  .container {
+    width: auto;
+}
 
   }

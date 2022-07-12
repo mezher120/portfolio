@@ -151,6 +151,9 @@ h2 {
     margin-right: 5px;
     gap: 5px;
 }
+.containerfrontback {
+    width: auto;
+}
 
 
 
