@@ -22,9 +22,9 @@ function App() {
     const newTheme = theme ==='light' ? 'dark' : 'light';
     setTheme(newTheme);
     if (theme === 'dark') { 
-      document.body.style.backgroundColor = color;
-    } else {
       document.body.style.backgroundColor = color2;
+    } else {
+      document.body.style.backgroundColor = color;
     }
 
   }

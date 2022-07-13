@@ -1,4 +1,18 @@
 :root {
+  --background: rgb(254, 243, 227);
+  --text-primary: black;
+  --text-secondary: gray;
+  --text-hover: white;
+  --borderbtn: black;
+  --backgroundbtn: black;
+  --backgroundbox: #2F3B47;
+  --boxshadow: black;
+  --colorbtn: white;
+  --line: gray;
+  --toggle: black;
+}
+
+[data-theme='dark'] {
   --background: black;
   --text-primary: white;
   --text-secondary: white;
@@ -10,20 +24,6 @@
   --colorbtn: black;
   --line: white;
   --toggle: rgb(254, 243, 227);
-}
-
-[data-theme='dark'] {
---background: rgb(254, 243, 227);
---text-primary: black;
---text-secondary: gray;
---text-hover: white;
---borderbtn: black;
---backgroundbtn: black;
---backgroundbox: #2F3B47;
---boxshadow: black;
---colorbtn: white;
---line: gray;
---toggle: black;
 }
 
 
