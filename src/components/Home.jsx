@@ -11,13 +11,13 @@ export default function Home() {
                 <span>Javier.</span>
             </h1>
             <h1>
-                <span>FullStack </span> 
+                <span>A full-stack </span> 
                 <span>Developer</span>
             </h1>
             </div>
             <div className={style.pcontainer} >
-            <p className={style.lineUp} >I am a passionate Frontend/Backend developer for the World. I have 3 years experience developing apps. Well-organised person, problem solver, independent employee. 
-            Fan of Sports, videogames and family.</p>
+            <p className={style.lineUp} >I am a passionate Frontend/Backend developer for the World. I have 3 years of experience developing apps. I am a well-organised person, a problem solver, and an independent employee. 
+            I am also a big fan of Sports, video-games and spending time with my family.</p>
             </div>
     
         </div>

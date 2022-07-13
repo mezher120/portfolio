@@ -24,7 +24,7 @@ function App() {
     if (theme === 'dark') { 
       document.body.style.backgroundColor = color;
     } else {
-      document.body.style.backgroundColor = color;
+      document.body.style.backgroundColor = color2;
     }
 
   }
