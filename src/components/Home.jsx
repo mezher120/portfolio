@@ -3,6 +3,7 @@ import style from './Home.module.css';
 
 export default function Home() {
     return (
+        <div className={style.firstcontainer} >
         <div className={style.container} id="home" >
             <div>
             <h1>
@@ -20,6 +21,8 @@ export default function Home() {
             I am also a big fan of Sports, video-games and spending time with my family.</p>
             </div>
     
+        </div>
+
         </div>
     )
 }

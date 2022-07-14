@@ -8,6 +8,7 @@ import cellphoneapp from '../images/cellphoneapp.png';
 
 const Works = () => {
     return (
+        <div className={style.firstcontainer} >
         <div className={style.container} id="works" >
             {/* <div className={style.line} data-aos="fade-right"
              data-aos-offset="300"
@@ -19,6 +20,8 @@ const Works = () => {
               <Cards image={cellphoneapp} name="ANDROID APP" link="https://github.com/mezher120/AppAsado2" ></Cards>
             </div>
             <br></br>
+        </div>
+
         </div>
     )
 }

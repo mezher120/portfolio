@@ -15,6 +15,8 @@ export default function Navbar({data}) {
     //   };
 
     return (
+        <div className={style.firstcontainer}>
+
         <div className={style.container}>
             <div className={style.iconcontainer}>
                 <img className={style.iconsignature} src={icon} alt="not found"></img>
@@ -30,6 +32,7 @@ export default function Navbar({data}) {
                 <span className={style.toggle_label}></span>
                 </label>
             </div>
+        </div>
         </div>
     )
 }

@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo&family=Calligraffitti&family=Cedarville+Cursive&family=Open+Sans:wght@300;800&display=swap');
 
+.firstcontainer {
+  background-color: var(--background);
+  display: grid;
+  grid-template-columns: 1fr
+}
+
 .container {
     background-color: var(--background);
     height: 100vh;
